@@ -1,14 +1,16 @@
 {
   "name": "slack-status",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1",
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "node ./src/index.js"
   },
+  "bin": {
+    "slack-status": "./bin/slack-status.js"
+  },
   "dependencies": {
     "minimist": "^1.2.0",
-    "node-fetch": "^1.6.3",
     "slack-node": "^0.1.8"
   }
 }
