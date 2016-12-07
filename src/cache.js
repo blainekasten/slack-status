@@ -1,7 +1,7 @@
 "use strict";
 const fs = require('fs');
 
-const CACHE_LOCATION = process.cwd() + '/LAST_NAME_CACHE';
+const CACHE_LOCATION = __dirname + '/LAST_NAME_CACHE';
 
 function getCache() {
   return new Promise((resolve, reject) => {
@@ -13,7 +13,7 @@ function getCache() {
 
 function setCache(lastName) {
   return new Promise((resolve, reject) => {
-    fs.writeFile(process.cwd() + '/LAST_NAME_CACHE', lastName, err => {
+    fs.writeFile(CACHE_LOCATION, lastName, err => {
       err ? reject(err) : resolve(lastName);
     });
   });
