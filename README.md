@@ -4,7 +4,7 @@ CLI for updating your slack status
 **Requirements**
 
 1. Installed globally
-2. Slack test token generated
+2. Slack test token generated (from [here](https://api.slack.com/docs/oauth-test-tokens))
 
 ### Steps:
 
@@ -12,6 +12,8 @@ CLI for updating your slack status
 
 ```bash
 yarn global add slack-status
+// or
+npm install -g slack-status
 ```
 
 ##### Give slack-status your token
